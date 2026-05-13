@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Neon Breakout Game
 
-# Run and deploy your AI Studio app
+A polished arcade breakout game with neon aesthetics, physics-based movement, and responsive controls.
 
-This contains everything you need to run your app locally.
+## Getting Started
 
-View your app in AI Studio: https://ai.studio/apps/7212341e-613b-48ef-bf8a-172784778c13
+### Prerequisites
+- Node.js 18 or higher
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
+### Local Development
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:3000`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The build output will be generated in the `dist` directory.
+
+## Deployment
+
+This project is deployed to GitHub Pages using GitHub Actions. The workflow automatically builds and deploys the game whenever you push to the `main` branch.
+
+**Live Demo:** https://chihkuangli.github.io/_game2_/
+
+The deployment configuration is located in `.github/workflows/deploy.yml`.
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion (for animations)
+- Lucide React (for icons)
